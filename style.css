@@ -1,0 +1,88 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+}
+html {
+  /* font-size: 62.5%; */
+}
+body {
+  background-color: yellow;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  /* font-family: inherit; */
+  border: none;
+  outline: none;
+  background: none;
+}
+fieldset {
+  border: none;
+}
+/* -------------------------- */
+
+.container {
+  width: 90vw;
+  max-width: 40rem;
+  padding: 2rem;
+  background-color: darkcyan;
+  color: aliceblue;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.5);
+}
+.container-title {
+  font-size: 2.5rem;
+}
+.currency-container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.currency-container select {
+  background: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.currency-container input {
+  width: 40%;
+  background: transparent;
+  text-align: right;
+  font-size: 2rem;
+  color: aliceblue;
+  border: 2px solid white;
+}
+.currency-container:nth-of-type(2) input {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.exchange-rate {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}

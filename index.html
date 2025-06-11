@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container-title">Currency Converter</h1>
+      <fieldset class="currency-container">
+        <select name="" id="currency-first">
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="JPY">JPY</option>
+          <option value="USD" selected>USD</option>
+        </select>
+        <input type="number" id="worth-first" value="1" min="0" />
+      </fieldset>
+      <!--  -->
+      <fieldset class="currency-container">
+        <select name="" id="currency-second">
+          <option value="AUD">AUD</option>
+          <option value="CAD">CAD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
+          <option value="INR">INR</option>
+          <option value="JPY" selected>JPY</option>
+          <option value="USD">USD</option>
+        </select>
+        <input type="number" id="worth-second" value="1" min="0" disabled />
+      </fieldset>
+      <p class="exchange-rate" id="exchange-rate">1 USD = 138.5802 JPY</p>
+    </div>
+    <!-- javascript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
